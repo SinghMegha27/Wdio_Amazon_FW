@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "(//div[@class='oxd-table-body oxd-card-table-body']//child::div[@class='data'])[1]"
+}

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class='oxd-input-group__label-wrapper']//following-sibling::div//input[@class='oxd-input oxd-input--active']"
+}

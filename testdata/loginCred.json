@@ -1,0 +1,28 @@
+{
+    "login": {
+      "username": "admin",
+      "password": "admin123"
+    },
+    "addemployee": {
+        "pim" : "PIM",
+        "addemp" : "Add Employee",
+        "firstName" : "FGH",
+        "lastName" : "YYHN",
+        "lastfourdigitemployeeId" : "6512",
+        "personaldetail" : "Personal Details",
+        "recordfound": "(1) Record Found"
+    },
+    "editemployee": {
+      "personaldetail" : "Personal Details",
+      "firstname" : "John",
+      "lastname" : "William",
+      "empID" : "77901"
+    },
+    "logout": {
+      "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+    },
+    "support": {
+      "customercare": "Customer Support"
+    }
+  }
+  

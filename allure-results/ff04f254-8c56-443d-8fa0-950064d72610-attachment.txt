@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//h6[@class='oxd-text oxd-text--h6 --strong']"
+}

@@ -1,0 +1,13 @@
+/**
+ * Generate a random four-digit number.
+ * @returns {string} Random four-digit number.
+ */
+function generateRandomFourDigitNumber() {
+    const min = 1000;
+    const max = 9999;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  module.exports = {
+    generateRandomFourDigitNumber
+  };

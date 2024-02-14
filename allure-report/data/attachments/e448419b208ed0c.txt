@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//p[@class='oxd-text oxd-text--p orangehrm-form-hint']//following-sibling::button"
-}

@@ -1,3 +1,21 @@
+const moment = require('moment');
+const fs = require('fs');
+const path = require('path');
+
+function getOutputDirectory() {
+    const allureResultsDir = 'allure-results';
+    const currentDate = moment().format('YYYY-MM-DD-HH-mm-ss');
+    const outputDir = path.join(allureResultsDir, "allure-reports-"+currentDate);
+
+    // Create the directory if it doesn't exist
+    if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
+    }
+
+    return outputDir;
+}
+
+
 exports.config = {
     //
     // ====================
@@ -136,9 +154,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec',['allure', {outputDir: 'allure-results',
-                                   disableWebdriverStepsReporting: true,
-                                   disableWebdriverScreenshotsReporting: false,}]],
+    // reporters: ['spec',['allure', {outputDir: 'allure-results',
+    //                                disableWebdriverStepsReporting: true,
+    //                                disableWebdriverScreenshotsReporting: false,}]],
+    reporters: ['spec', ['allure', {
+        outputDir: getOutputDirectory(),
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

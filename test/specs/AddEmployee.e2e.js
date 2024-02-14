@@ -5,16 +5,19 @@ const fs = require('fs');
 const path = require("path");
 const jsonDataPath = path.join(__dirname, "..", "..", "testdata", "loginCred.json");
 const data = JSON.parse(fs.readFileSync(jsonDataPath));
+const { generateRandomFourDigitNumber } = require('../../commands/randomUtils');
 
 describe("Check if Employee Exist", () => {
     beforeEach(async () => {
         await login(data.login.username, data.login.password);
     });
     it("Add Employee", async() => {
+        const randomFourDigitNumber = generateRandomFourDigitNumber();
         await DashboardPage.clickOnPIM();
         await PIMPage.checkPIMElement(data.addemployee.pim);
         await PIMPage.clickOnAddEmployee();
         await PIMPage.checkAddEmployeeElement(data.addemployee.addemp);
+        data.addemployee.lastfourdigitemployeeId = randomFourDigitNumber.toString();
         await PIMPage.createEmployee(data.addemployee.firstName, data.addemployee.lastName, data.addemployee.lastfourdigitemployeeId);
         const retriveid = await PIMPage.fetchID();
         console.log("Fetched ID Value:", await retriveid);

@@ -1,9 +1,0 @@
-{
-  "script": "return (function(el) {\r\n            return el.value;\r\n        }).apply(null, arguments)",
-  "args": [
-    {
-      "element-6066-11e4-a52e-4f735466cecf": "2C83C3842E49B344BFE4E5CF7C6C9AA0_element_128",
-      "ELEMENT": "2C83C3842E49B344BFE4E5CF7C6C9AA0_element_128"
-    }
-  ]
-}

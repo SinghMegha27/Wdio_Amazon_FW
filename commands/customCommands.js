@@ -1,6 +1,6 @@
 // customCommands.js
 const SiginInPage = require('../test/pageobjects/SiginInPage');
-const DashboardPage = require('../test/pageobjects/DashboardPage')
+const DashboardPage = require('../test/pageobjects/DashboardPage');
 
 async function login(username, password) {
     await browser.url("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");

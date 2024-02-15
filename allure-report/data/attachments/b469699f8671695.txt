@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "Unable to locate element: //*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[9]/div/button[1]/i",
-  "stacktrace": "RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nNoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:509:5\ndom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16\n"
-}

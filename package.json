@@ -26,6 +26,7 @@
     "wdio-geckodriver-service": "^5.0.2"
   },
   "dependencies": {
+    "moment": "^2.30.1",
     "webdriverio": "^8.31.1"
   }
 }

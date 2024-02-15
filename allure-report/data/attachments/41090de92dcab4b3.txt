@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "(//div[@class='orangehrm-container']//div//div//div//div//div//div[@class='card-header-slot']//div//div//div//div[@class='data'])[1]"
-}
